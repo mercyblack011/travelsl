@@ -1,0 +1,223 @@
+/* Search Results - Card Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #FF9500;
+  --secondary-color: #7B2FBE;
+  --bg-color: #f8f7f4;
+  --card-bg: #ffffff;
+  --text-color: #1a1a1a;
+  --muted-text: #666666;
+  --border-light: #f0f0f0;
+}
+
+.search-results-section {
+  background-color: var(--bg-color);
+  padding: 60px 0;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.section-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-color);
+  margin: 0 0 12px 0;
+}
+
+.section-header p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: var(--muted-text);
+  margin: 0 0 20px 0;
+}
+
+.section-underline {
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Card Styles */
+.card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* Card Image Container */
+.card-img {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.07);
+}
+
+/* Card Badge (Place Name) */
+.card-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.68);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  padding: 7px 16px;
+  border-left: 3px solid var(--primary-color);
+}
+
+/* Card Body */
+.card-body {
+  padding: 18px 18px 12px;
+  flex: 1;
+}
+
+/* Stars */
+.stars {
+  color: var(--primary-color);
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stars .empty-star {
+  color: #dddddd;
+}
+
+/* Description */
+.card-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12.5px;
+  color: var(--muted-text);
+  line-height: 1.65;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card Footer */
+.card-footer {
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  gap: 10px;
+}
+
+/* Read More Button */
+.read-more {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.read-more::after {
+  content: ' →';
+  margin-left: 4px;
+}
+
+.read-more:hover {
+  color: var(--secondary-color);
+}
+
+/* Category Tag */
+.card-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  background-color: rgba(123, 47, 190, 0.08);
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Empty State */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--muted-text);
+  font-size: 16px;
+}
