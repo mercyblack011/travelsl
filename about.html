@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>About Us - Travelsl</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Learn about TravelSL.info, your trusted guide to exploring Sri Lanka. Our team of local experts provides invaluable travel advice, comprehensive resources, and insider tips to help you discover the best of Sri Lanka. Visit our About Us page to find out how we make your Sri Lankan adventure unforgettable.">
+	<meta name="keywords" content="Sri Lanka, Travelsl, Best places in Sri Lanka, Sri Lanka beaches, Sri Lanka tourism, Sri Lanka adventure travel,t ravel, travel guide,Sri Lanka, travel recommendation , travel recommendation for srilanka , best place in sri lanka, ">
+	<link rel="icon" href="images/logo-meta.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/about_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
+	<link rel="stylesheet" href="styles-2/header.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+	
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE6ZQVK3NG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE6ZQVK3NG');
+</script>
+	
+</head>
+
+<body>
+	
+	<style>
+		/* ── TRAVELSL ABOUT PAGE — BRAND STYLES ── */
+		:root {
+			--orange: #FF9500;
+			--purple: #7B2FBE;
+			--dark:   #1a1a2e;
+			--grad:   linear-gradient(90deg, #FF9500, #7B2FBE);
+		}
+
+		/* ── INTRO SECTION ── */
+		.intro { padding: 80px 0 60px; background: #fff; }
+		.intro_title {
+			font-family: 'Playfair Display', serif !important;
+			font-size: 32px !important;
+			font-weight: 900 !important;
+			color: #1a1a1a !important;
+			line-height: 1.2;
+			margin-bottom: 20px;
+			margin-top: 10px;
+		}
+		.intro_title::after {
+			content: '';
+			display: block;
+			width: 60px; height: 3px;
+			background: var(--orange);
+			margin-top: 14px;
+		}
+		.intro_text p {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 14px; color: #555; line-height: 1.85;
+			text-align: justify;
+		}
+		.intro_image img {
+			border-radius: 12px;
+			box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+		}
+		.button.intro_button { margin-bottom: 24px; margin-top: 10px; }
+		.button.intro_button a {
+			display: inline-block;
+			background: var(--orange);
+			color: #fff !important;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 11px; font-weight: 700;
+			letter-spacing: 2px; text-transform: uppercase;
+			padding: 3px 32px; border-radius: 20px;
+			text-decoration: none; transition: background 0.3s;
+		}
+		.button.intro_button a:hover { background: var(--purple); }
+
+		/* ── MILESTONES ── */
+		.milestones {
+			background: linear-gradient(135deg, #1a1a2e 0%, #2d1b5e 100%);
+			padding: 70px 40px; margin: 60px 0;
+		}
+		.elements_title {
+			font-family: 'Montserrat', sans-serif !important;
+			font-size: 26px !important; font-weight: 800 !important;
+			letter-spacing: 3px !important;
+			color: #fff !important; text-align: center !important;
+			margin-bottom: 50px !important; position: relative;
+		}
+		.elements_title::after {
+			content: '';
+			display: block; width: 60px; height: 3px;
+			background: var(--orange); margin: 14px auto 0;
+		}
+		.milestone { padding: 30px 20px; }
+		.milestone_icon img {
+			width: 56px; height: 56px; margin-bottom: 16px;
+			filter: brightness(0) invert(1); opacity: 0.9;
+		}
+		.milestone_counter {
+			font-family: 'Playfair Display', serif !important;
+			font-size: 52px !important; font-weight: 900 !important;
+			color: var(--orange) !important; line-height: 1; margin-bottom: 8px;
+		}
+		.milestone_text {
+			font-family: 'Montserrat', sans-serif !important;
+			font-size: 12px !important; font-weight: 600 !important;
+			letter-spacing: 1.5px !important; text-transform: uppercase !important;
+			color: rgba(255,255,255,0.7) !important;
+		}
+		.col-lg-3 { margin-top: 0 !important; }
+
+		/* ── SLIDER SECTION HEADING ── */
+		.slider-section { padding: 80px 0 0; background: #f8f7f4; }
+		.slider-section-header {
+			text-align: center; padding-bottom: 40px;
+		}
+		.slider-section-header h2 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 26px; font-weight: 800;
+			letter-spacing: 3px; text-transform: uppercase;
+			color: #1a1a1a; margin-bottom: 10px;
+		}
+		.slider-section-header p {
+			color: #666; font-size: 13px;
+		}
+		.slider-underline {
+			width: 60px; height: 3px;
+			background: var(--orange);
+			margin: 12px auto 0; border-radius: 2px;
+		}
+
+		/* ── SLIDER ── */
+		.slider {
+			position: relative;
+			width: 90%;
+			overflow: hidden;
+			margin: 0 auto 80px;
+			border-radius: 16px;
+			box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+		}
+		.slides { display: flex; transition: transform 0.5s ease-in-out; }
+		.slide { min-width: 100%; box-sizing: border-box; position: relative; }
+		.slide img { width: 100%; height: 520px; object-fit: cover; display: block; }
+
+		/* Caption — orange-purple gradient bar style */
+		.caption {
+			position: absolute; bottom: 0; left: 0; right: 0;
+			background: linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0));
+			padding: 60px 40px 30px;
+			width: 100%;
+		}
+		.caption::before {
+			content: '';
+			position: absolute; top: 0; left: 40px;
+			width: 50px; height: 3px;
+			background: var(--orange);
+		}
+		.caption-h {
+			font-family: 'Playfair Display', serif;
+			font-size: 26px; font-weight: 900;
+			color: #fff; margin-bottom: 8px;
+		}
+		.captext { color: rgba(255,255,255,0.8); font-size: 13px; line-height: 1.6; }
+
+		/* Dots */
+		.dots {
+			position: absolute; bottom: 20px; right: 40px;
+			display: flex; gap: 8px;
+		}
+		.dot {
+			width: 8px; height: 8px;
+			background: rgba(255,255,255,0.4);
+			border-radius: 50%; cursor: pointer;
+			transition: all 0.3s;
+		}
+		.dot.active { background: var(--orange); transform: scale(1.3); }
+		.dot:hover  { background: rgba(255,255,255,0.8); }
+
+		/* Slider nav arrows */
+		.cta_slider_nav {
+			position: absolute; top: 50%; transform: translateY(-50%);
+			width: 44px; height: 44px;
+			background: rgba(255,255,255,0.15);
+			border-radius: 50%;
+			display: flex; align-items: center; justify-content: center;
+			cursor: pointer; z-index: 10;
+			transition: background 0.3s;
+		}
+		.cta_slider_nav:hover { background: var(--orange); }
+		.cta_slider_prev { left: 20px; }
+		.cta_slider_next { right: 20px; }
+		.cta_slider_nav svg { width: 24px; height: 24px; margin-top: 0; }
+		.nav_path { fill: rgba(255,255,255,0.9); }
+		.nav_arrow { fill: rgba(255,255,255,0.9); }
+		.cta_slider_nav:hover .nav_path,
+		.cta_slider_nav:hover .nav_arrow { fill: #fff; }
+
+		/* Mobile */
+		@media (max-width: 768px) {
+			.slide img { height: 220px; }
+			.caption { padding: 40px 20px 20px; }
+			.caption-h { font-size: 16px; }
+			.captext { font-size: 11px; }
+			.dots { right: 20px; bottom: 14px; }
+		}
+	</style>
+
+	
+	  
+	<div class="super_container">
+
+		<!-- TOP BAR -->
+		<div class="top_bar">
+			<div class="container">
+				<div class="social" style="
+    margin-top: -6px;
+">
+					<ul class="social_list">
+						<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="social_list_item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- MAIN NAV -->
+		<nav class="main_nav">
+			<div class="container">
+				<div class="nav_inner">
+					<div class="logo_container" style="
+    margin-top: 5px;
+">
+								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelsl</a></div>
+							</div>
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="/">HOME</a></li>
+						<li class="main_nav_item active"><a href="about.html">ABOUT US</a></li>
+						<li class="main_nav_item"><a href="contact.html">CONTACT US</a></li>
+					</ul>
+					<div class="hamburger" id="hamburger">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- MOBILE MENU -->
+		<div class="mobile_menu" id="mobileMenu">
+			<div class="mobile_menu_close" id="menuClose">
+				<span></span><span></span>
+			</div>
+			<div class="mobile_menu_logo">
+				<a href="/" class="logo">
+					<div class="logo_pin"><div class="logo_pin_dot"></div></div>
+					<span>TRAVELSL</span>
+				</a>
+			</div>
+			<ul class="mobile_nav_list">
+				<li><a href="/">HOME</a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+				<li><a href="contact.html">CONTACT US</a></li>
+			</ul>
+		</div>
+
+		<!-- HERO -->
+		<div class="home_hero">
+			<div class="hero_bg" style="background-image: url('images/home.webp');"></div>
+			<div class="hero_overlay"></div>
+			<div class="hero_content">
+				<div class="hero_eyebrow">+ WHO WE ARE</div>
+				<h1 class="hero_title">About <span class="hero_title_orange">Us</span></h1>
+			</div>
+			<div class="hero_bottom_bar"></div>
+		</div>
+
+		<!-- PRELOADER -->
+		<div class="preloader" id="preloader">
+			<div class="preloader_inner">
+				<div class="preloader_bar"></div>
+				<div class="preloader_bar"></div>
+				<div class="preloader_bar"></div>
+				<div class="preloader_bar"></div>
+			</div>
+		</div>
+
+		<!-- Intro -->
+
+		<div class="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="intro_image"><img src="images/intro.png" alt=""></div>
+					</div>
+					<div class="col-lg-5"style="
+    padding-left: 50px;
+">
+						<div class="intro_content">
+							<div class="intro_title">we have the best place to viste</div>
+							<div class="button intro_button">
+								<div class="button_bcg"></div><a href="/">explore
+									now<span></span><span></span><span></span></a>
+							</div>
+							<div class="intro_text">
+								<p>Welcome to travelsl, your expert guide to discovering the wonders of Sri Lanka. Our platform is uniquely designed to recommend the best travel destinations by leveraging user preferences and local insights. Users can effortlessly find places through two intuitive search methods: "Search by Province" for those interested in exploring a specific area, or "Search by Interest" which allows travelers to filter locations by province, category, or activity type. Each recommendation on travelsl.info is carefully selected based on its popularity, uniqueness, and the quality of experiences it offers, ensuring you have memorable adventures across Sri Lanka.</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Milestones -->
+
+					<div class="milestones">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="elements_title">SPORTS ACTIVITIES</div>
+							</div>
+						</div>
+						<div class="row milestones_container">
+
+							<!-- Milestone -->
+							<div class="col-lg-3 milestone_col">
+								<div class="milestone text-center">
+									<div class="milestone_icon"><img src="images/surfboard.png" alt=""></div>
+									<div class="milestone_counter" data-end-value="82">0</div>
+									<div class="milestone_text">Surfboarding Places</div>
+								</div>
+							</div>
+
+							<!-- Milestone -->
+							<div class="col-lg-3 milestone_col">
+								<div class="milestone text-center">
+									<div class="milestone_icon"><img src="images/milestone_2.png" alt=""></div>
+									<div class="milestone_counter" data-end-value="125">0</div>
+									<div class="milestone_text">Fishing Places</div>
+								</div>
+							</div>
+
+							<!-- Milestone -->
+							<div class="col-lg-3 milestone_col">
+								<div class="milestone text-center">
+									<div class="milestone_icon"><img src="images/climbing.png" alt=""></div>
+									<div class="milestone_counter" data-end-value="39">0</div>
+									<div class="milestone_text">climbing places</div>
+								</div>
+							</div>
+
+							<!-- Milestone -->
+							<div class="col-lg-3 milestone_col">
+								<div class="milestone text-center">
+									<div class="milestone_icon"><img src="images/milestone_4.png" alt=""></div>
+									<div class="milestone_counter" data-end-value="22">0</div>
+									<div class="milestone_text">cool climate places</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+	<div class="slider">
+    <div class="slides">
+        <!-- Define each slide -->
+        <div class="slide">
+            <img src="images/1.webp" alt="Description of image 1">
+            <div class="caption">
+                <h2 class="caption-h">DISCOVERING ISLAND NATURE TREASURES</h2>
+                <p class="captext">Sri Lanka: Island of tea-covered hills, exotic wildlife, pristine beaches, and ancient wonders like Sigiriya rock fortress. Nature's paradise awaits!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/2.webp" alt="Description of image 2">
+            <div class="caption">
+                <h2 class="caption-h">EXPLORING CULTURAL TRADITIONS</h2>
+                <p class="captext">Explore the rich tapestry of Sri Lanka's cultural traditions, from vibrant festivals to ancient rituals, showcasing its diverse heritage.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/3.webp" alt="Description of image 3">
+            <div class="caption">
+                <h2 class="caption-h">UNVEILING THE BEAUTY OF BEACH LIFE</h2>
+                <p class="captext">Discover Sri Lanka's coastal charm, where golden sands meet azure waters, offering a haven for relaxation, adventure, and unforgettable memories.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/4.webp" alt="Description of image 4">
+            <div class="caption">
+                <h2 class="caption-h">WHERE EARTH TOUCHES THE SKY</h2>
+                <p class="captext">In Sri Lanka, the ethereal beauty of towering mountains meets the vast expanse of the sky, creating an awe-inspiring landscape.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/5.webp" alt="Description of image 5">
+            <div class="caption">
+                <h2 class="caption-h">EXPLORING THE HEART OF THE WILDERNESS</h2>
+                <p class="captext">Embark on a journey into the untamed wilderness of Sri Lanka, where dense jungles and majestic creatures await your exploration.</p>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+
+  <!-- CTA Slider Nav - Prev -->
+<div class="cta_slider_nav cta_slider_prev">
+    <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+        <defs>
+            <linearGradient id='cta_grad_prev'>
+                <stop offset='0%' stop-color='#fa9e1b'/>
+                <stop offset='100%' stop-color='#8d4fff'/>
+            </linearGradient>
+        </defs>
+        <path class="nav_path" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+        M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+        C22.545,2,26,5.541,26,9.909V23.091z"/>
+        <polygon class="nav_arrow" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+        11.042,18.219 "/>
+    </svg>
+</div>
+
+<!-- CTA Slider Nav - Next -->
+<div class="cta_slider_nav cta_slider_next">
+    <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+        <defs>
+            <linearGradient id='cta_grad_next'>
+                <stop offset='0%' stop-color='#fa9e1b'/>
+                <stop offset='100%' stop-color='#8d4fff'/>
+            </linearGradient>
+        </defs>
+        <path class="nav_path" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+        M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+        C22.545,2,26,5.541,26,9.909V23.091z"/>
+        <polygon class="nav_arrow" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+        17.046,15.554 "/>
+    </svg>
+</div>
+
+
+    <!-- Dots navigation at the bottom -->
+		<div class="dots"></div>
+		</div><!-- end slider -->
+		</div><!-- end slider section -->
+
+	<script>
+document.addEventListener('DOMContentLoaded', () => {
+    let currentSlide = 0; // Index for current slide
+    const slides = document.querySelector('.slides'); // Slider container
+    const totalSlides = slides.children.length; // Total number of slides
+
+    // Function to update the slide position based on current index
+    function updateSlide() {
+        const slideWidth = document.querySelector('.slide').offsetWidth;
+        slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        updateDots(); // Update active dot
+    }
+
+    // Function to go to the specified slide
+    function goToSlide(index) {
+        currentSlide = index;
+        updateSlide();
+    }
+
+    // Function to update active dot
+    function updateDots() {
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            if (index === currentSlide) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    }
+
+    // Function to show the next slide
+    function showNextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides; // Loop back after last slide
+        updateSlide();
+    }
+
+    // Function to show the previous slide
+    function showPrevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // Loop back to last slide
+        updateSlide();
+    }
+
+    // Set interval for automatic slide change
+    setInterval(showNextSlide, 10000); // Change slide every 10 seconds
+
+    // Event listeners for next and previous buttons
+    document.querySelector('.cta_slider_prev').addEventListener('click', showPrevSlide);
+    document.querySelector('.cta_slider_next').addEventListener('click', showNextSlide);
+
+    // Initialize dots
+    const dotsContainer = document.querySelector('.dots');
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (i === currentSlide) {
+            dot.classList.add('active');
+        }
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+    }
+
+    // Show the first slide initially
+    updateSlide();
+});
+</script>
+
+
+		<!-- Footer -->
+		<div class="boxx">
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+								<div class="footer_content footer_about">
+									<div class="logo_container footer_logo">
+										<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelsl</a>
+										</div>
+									</div>
+									<p class="footer_about_text">Discover the enchantment of Sri Lanka, a jewel in the Indian Ocean, where ancient history, vibrant culture, and stunning landscapes converge.</p>
+									<ul class="footer_social_list">
+										<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a>
+										</li>
+										<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li class="footer_social_item"><a href="#"><i class="fa fa-instagram"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+							</div>
+						</div>
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+							</div>
+						</div>
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+								<div class="footer_title">contact info</div>
+								<div class="footer_content footer_contact">
+									<ul class="contact_info_list">
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/placeholder.svg" alt="">
+												</div>
+											</div>
+											<div class="contact_info_text">4127 Raoul Wallenber 45b-c
+												colombo
+											</div>
+										</li>
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/phone-call.svg" alt="">
+												</div>
+											</div>
+											<div class="contact_info_text">+94 75-27-47-549</div>
+										</li>
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/message.svg" alt="">
+												</div>
+											</div>
+											<div class="contact_info_text"><a
+													href="mailto:contactme@gmail.com?Subject=Hello"
+													target="_top">contact@travelsl.info</a></div>
+										</li>
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/planet-earth.svg"
+														alt=""></div>
+											</div>
+											<div class="contact_info_text"><a href="">www.Travelsl.info</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+			<!-- Copyright -->
+
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 order-lg-1 order-2  ">
+							<div class="copyright_content d-flex flex-row align-items-center">
+								<div>
+									Copyright &copy; All rights reserved by | Travelsl.info
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-9 order-lg-2 order-1">
+							<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
+								<div class="footer_nav">
+									<ul class="footer_nav_list">
+										<li class="footer_nav_item"><a href="/">home</a></li>
+										<li class="footer_nav_item"><a href="about.html">about us</a></li>
+										<li class="footer_nav_item"><a href="contact.html">contact</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="styles/bootstrap4/popper.js"></script>
+			<script src="styles/bootstrap4/bootstrap.min.js"></script>
+			<script src="plugins/greensock/TweenMax.min.js"></script>
+			<script src="plugins/greensock/TimelineMax.min.js"></script>
+			<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+			<script src="plugins/greensock/animation.gsap.min.js"></script>
+			<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+			<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+			<script src="plugins/easing/easing.js"></script>
+			<script src="plugins/parallax-js-master/parallax.min.js"></script>
+			<script src="js/about_custom.js"></script>
+			<script>
+			window.addEventListener('load', function () {
+				setTimeout(function () {
+					var p = document.getElementById('preloader');
+					if (p) p.classList.add('hidden');
+				}, 600);
+			});
+			var hamburger  = document.getElementById('hamburger');
+			var mobileMenu = document.getElementById('mobileMenu');
+			var menuClose  = document.getElementById('menuClose');
+			if (hamburger) hamburger.addEventListener('click', function () { mobileMenu.classList.add('open'); document.body.style.overflow='hidden'; });
+			if (menuClose) menuClose.addEventListener('click', function () { mobileMenu.classList.remove('open'); document.body.style.overflow=''; });
+			document.addEventListener('keydown', function(e){ if(e.key==='Escape' && mobileMenu){ mobileMenu.classList.remove('open'); document.body.style.overflow=''; }});
+			</script>
+			<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/jquery-circle-progress-1.2.2/circle-progress.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/elements_custom.js"></script>
+
+
+</body>
+
+</html>

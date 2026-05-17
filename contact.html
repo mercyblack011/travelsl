@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact - Travelsl</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Reach out to TravelSL.info for expert assistance with your Sri Lanka travel plans. Our contact page offers easy ways to get in touch, whether you have questions about trips, need travel advice, or require support. Connect with our dedicated team of Sri Lanka travel experts today.">
+	<meta name="keywords" content="Contact TravelSL.info, Travelsl, Sri Lanka, Best places in Sri Lanka, Sri Lanka beaches, Sri Lanka tourism, Sri Lanka adventure travel,t ravel, travel guide,Sri Lanka, travel recommendation , travel recommendation for srilanka , best place in sri lanka, ">
+	<link rel="icon" href="images/logo-meta.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles-2/header.css">
+	
+	<style>
+		/* ══ TRAVELSL CONTACT PAGE — BRAND STYLES ══ */
+		:root {
+			--orange: #FF9500;
+			--purple: #7B2FBE;
+			--dark:   #1a1a2e;
+			--grad:   linear-gradient(90deg, #FF9500, #7B2FBE);
+			--light-bg: #f8f7f4;
+		}
+		body { font-family: 'Montserrat', sans-serif; }
+
+		/* ── LOGO FIX in nav ── */
+		.logo_container .logo a {
+			display: flex; align-items: center; gap: 10px; text-decoration: none;
+		}
+
+		/* ── CONTACT FORM SECTION ── */
+		.contact_form_section {
+			background: var(--light-bg);
+			padding: 80px 0 70px !important;
+		}
+		.contact_form_container {
+			background: #fff;
+			border-radius: 16px;
+			box-shadow: 0 12px 48px rgba(0,0,0,0.08);
+			padding: 56px 60px !important;
+			max-width: 720px;
+			margin: 0 auto;
+		}
+
+		.contact_info_item
+{
+	margin-bottom: 22px;
+	background: rgba(255,255,255,0.05) !important;
+			border-radius: 8px !important;
+			padding: 12px 14px !important;
+			display: flex !important;
+			align-items: center !important;
+			gap: 12px !important;
+			margin-bottom: 10px !important;
+			font-size: 12px !important;
+	
+} 
+		.contact_title {
+			font-family: 'Playfair Display', serif !important;
+			font-size: 30px !important;
+			font-weight: 900 !important;
+			color: #1a1a1a !important;
+			margin-bottom: 8px !important;
+			letter-spacing: 0 !important;
+			text-transform: none !important;
+		}
+		.contact_title::after {
+			content: '';
+			display: block;
+			width: 50px; height: 3px;
+			background: var(--orange);
+			margin: 12px auto 28px;
+		}
+		.input_field {
+			width: 100% !important;
+			padding: 14px 18px !important;
+			border: 1.5px solid #e8e8e8 !important;
+			border-radius: 8px !important;
+			font-family: 'Montserrat', sans-serif !important;
+			font-size: 13px !important;
+			color: #333 !important;
+			background: #fafafa !important;
+			margin-bottom: 16px !important;
+			transition: border-color 0.3s, box-shadow 0.3s !important;
+			outline: none !important;
+		}
+		.input_field:focus {
+			border-color: var(--orange) !important;
+			box-shadow: 0 0 0 3px rgba(255,149,0,0.12) !important;
+			background: #fff !important;
+		}
+		.text_field {
+			width: 100% !important;
+			padding: 14px 18px !important;
+			border: 1.5px solid #e8e8e8 !important;
+			border-radius: 8px !important;
+			font-family: 'Montserrat', sans-serif !important;
+			font-size: 13px !important;
+			color: #333 !important;
+			background: #fafafa !important;
+			resize: vertical !important;
+			margin-bottom: 24px !important;
+			transition: border-color 0.3s !important;
+			outline: none !important;
+		}
+		.text_field:focus {
+			border-color: var(--orange) !important;
+			box-shadow: 0 0 0 3px rgba(255,149,0,0.12) !important;
+			background: #fff !important;
+		}
+		.form_submit_button {
+			background: var(--orange) !important;
+			color: #fff !important;
+			font-family: 'Montserrat', sans-serif !important;
+			font-size: 11px !important;
+			font-weight: 700 !important;
+			letter-spacing: 2px !important;
+			text-transform: uppercase !important;
+			padding: 3px 225px !important;
+			border-radius: 30px !important;
+			border: none !important;
+			cursor: pointer !important;
+			transition: background 0.3s, transform 0.2s !important;
+		}
+		.form_submit_button:hover {
+			background: var(--purple) !important;
+			transform: translateY(-2px) !important;
+		}
+
+		/* ── ABOUT / INFO SECTION ── */
+		.about {
+			background: #fff;
+			padding: 70px 0 80px !important;
+			border-top: 1px solid #f0f0f0;
+		}
+		.about_image img {
+			border-radius: 14px !important;
+			width: 100%;
+		}
+		.about_logo .logo a {
+			display: flex; align-items: center; gap: 8px;
+			text-decoration: none;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 800; font-size: 16px;
+			color: #1a1a1a; letter-spacing: 2px;
+		}
+		.about_text {
+			font-size: 13px !important;
+			color: #555 !important;
+			line-height: 1.85 !important;
+			margin: 20px 0 24px !important;
+		}
+		.about_social_list { display: flex; gap: 10px; list-style: none; padding: 0; margin: 0; }
+		.about_social_item a {
+			width: 36px; height: 36px;
+			border-radius: 50%;
+			border: 1.5px solid #ddd;
+			display: flex; align-items: center; justify-content: center;
+			color: #666; font-size: 13px;
+			transition: all 0.2s; text-decoration: none;
+		}
+		.about_social_item a:hover {
+			background: var(--orange); border-color: var(--orange); color: #fff;
+		}
+
+		/* Contact info list */
+		.about_info { padding-top: 8px; }
+		.contact_info_list { list-style: none; padding: 0; margin: 0; }
+		.contact_info_item {
+			display: flex; align-items: flex-start; gap: 14px;
+			margin-bottom: 20px;
+			padding: 16px;
+			border-radius: 10px;
+			background: var(--light-bg);
+			transition: background 0.2s;
+		}
+		.contact_info_item:hover { background: #f0f0f0; }
+		.contact_info_icon {
+			width: 36px; height: 36px;
+			border-radius: 50%;
+			display: flex; align-items: center; justify-content: center;
+			flex-shrink: 0;
+		}
+		.contact_info_icon img { width: 16px; height: 16px;  }
+		.contact_info_text {
+			font-size: 12.5px; color: #ffffff; line-height: 1.6;
+			padding-top: 6px;
+		}
+		.contact_info_text a { color: #fff; text-decoration: none; }
+		.contact_info_text a:hover { color: var(--purple); }
+
+		
+		
+		
+		
+		
+		
+
+		/* ── RESPONSIVE ── */
+		@media (max-width: 768px) {
+			.contact_form_container { padding: 36px 24px !important; }
+			.about { padding: 50px 0 60px !important; }
+			.about_image { margin-bottom: 32px; }
+			.about_content { margin-bottom: 32px; }
+		}
+
+		/* ══ ADDITIONAL FIXES ══ */
+
+		/* Fix form inputs — make them clearly visible */
+		.contact_form_name,
+		.contact_form_email,
+		.contact_form_subject,
+		.contact_form_message {
+			display: block !important;
+			width: 100% !important;
+			padding: 14px 18px !important;
+			border: 2px solid #e0e0e0 !important;
+			border-radius: 8px !important;
+			font-family: 'Montserrat', sans-serif !important;
+			font-size: 13px !important;
+			color: #333 !important;
+			background: #f9f9f9 !important;
+			margin-bottom: 18px !important;
+			box-sizing: border-box !important;
+			transition: border-color 0.3s, box-shadow 0.3s !important;
+		}
+		.contact_form_name:focus,
+		.contact_form_email:focus,
+		.contact_form_subject:focus,
+		.contact_form_message:focus {
+			border-color: #FF9500 !important;
+			box-shadow: 0 0 0 3px rgba(255,149,0,0.15) !important;
+			background: #fff !important;
+			outline: none !important;
+		}
+		.contact_form_message { resize: vertical !important; min-height: 120px !important; }
+
+		/* Fix contact form container — center properly */
+		.contact_form { text-align: left !important; }
+		.contact_form .text-center { text-align: left !important; }
+		.contact_form_container { text-align: center !important; }
+		.contact_title { text-align: center !important; }
+
+		/* Fix about section — remove any dark background on left col */
+		.about .col-lg-5 { background: transparent !important; }
+		.about .row { background: transparent !important; }
+		.about_image {
+			padding: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.about_image img {
+			max-width: 100%;
+			height: auto !important;
+			object-fit: cover;
+		}
+
+		/* Fix about logo — replace old image logo with pin style */
+		.about_logo .logo img { display: none !important; }
+		.about_logo .logo a::before {
+			content: '';
+			display: inline-block;
+			width: 22px; height: 22px;
+			background: #FF9500;
+			border-radius: 50% 50% 50% 0;
+			transform: rotate(-45deg);
+			margin-right: 8px;
+			flex-shrink: 0;
+		}
+		.about_logo .logo a {
+			display: flex !important;
+			align-items: center !important;
+			font-family: 'Montserrat', sans-serif !important;
+			font-weight: 800 !important;
+			font-size: 15px !important;
+			color: #1a1a1a !important;
+			letter-spacing: 2px !important;
+			text-decoration: none !important;
+			text-transform: uppercase !important;
+			margin-bottom: 12px;
+		}
+
+		
+		
+		
+
+		
+		
+		
+
+		/* Fix about social icons */
+		.about_social_list {
+			display: flex !important;
+			gap: 10px !important;
+			list-style: none !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		.about_social_item a {
+			width: 38px !important; height: 38px !important;
+			border-radius: 50% !important;
+			border: 1.5px solid #ddd !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			color: #666 !important;
+			font-size: 13px !important;
+			text-decoration: none !important;
+			transition: all 0.2s !important;
+		}
+		.about_social_item a:hover {
+			background: #FF9500 !important;
+			border-color: #FF9500 !important;
+			color: #fff !important;
+		}
+
+		/* Fix contact info icon circles in about section */
+		.about .contact_info_icon {
+			width: 40px !important; height: 40px !important;
+			min-width: 40px !important;
+			background: #FF9500 !important;
+			border-radius: 50% !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+		}
+		.about .contact_info_icon img {
+			width: 16px !important; height: 16px !important;
+			filter: brightness(0) invert(1) !important;
+		}
+		.about .contact_info_item {
+			background: #f8f7f4 !important;
+			border-radius: 10px !important;
+			padding: 14px 16px !important;
+			display: flex !important;
+			align-items: center !important;
+			gap: 14px !important;
+			margin-bottom: 14px !important;
+		}
+
+		
+		
+		
+		
+		
+
+		
+		
+
+		
+
+		/* General section background fix */
+		.about { background: #fff !important; }
+		.contact_form_section { background: #f8f7f4 !important; }
+	</style>
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE6ZQVK3NG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE6ZQVK3NG');
+</script>
+	
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- TOP BAR -->
+		<div class="top_bar">
+			<div class="container">
+				<div class="social">
+					<ul class="social_list">
+						<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="social_list_item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- MAIN NAV -->
+		<nav class="main_nav">
+			<div class="container">
+				<div class="nav_inner">
+					<div class="logo_container">
+								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelsl</a></div>
+							</div>
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="/">HOME</a></li>
+						<li class="main_nav_item"><a href="about">ABOUT US</a></li>
+						<li class="main_nav_item active"><a href="contact">CONTACT</a></li>
+					</ul>
+					<div class="hamburger" id="hamburger">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- MOBILE MENU -->
+		<div class="mobile_menu" id="mobileMenu">
+			<div class="mobile_menu_close" id="menuClose">
+				<span></span><span></span>
+			</div>
+			<div class="mobile_menu_logo">
+				<a href="/" class="logo">
+					<div class="logo_pin"><div class="logo_pin_dot"></div></div>
+					<span>TRAVELSL</span>
+				</a>
+			</div>
+			<ul class="mobile_nav_list">
+				<li><a href="/">HOME</a></li>
+				<li><a href="about">ABOUT US</a></li>
+				<li><a href="contact">CONTACT</a></li>
+			</ul>
+		</div>
+
+		<!-- HERO -->
+		<div class="home_hero">
+			<div class="hero_bg" style="background-image: url('images/home.webp');"></div>
+			<div class="hero_overlay"></div>
+			<div class="hero_content">
+				<div class="hero_eyebrow">+ GET IN TOUCH</div>
+				<h1 class="hero_title">Contact <span class="hero_title_orange">Us</span></h1>
+			</div>
+			<div class="hero_bottom_bar"></div>
+		</div>
+
+		<!-- PRELOADER -->
+		<div class="preloader" id="preloader">
+			<div class="preloader_inner">
+				<div class="preloader_bar"></div>
+				<div class="preloader_bar"></div>
+				<div class="preloader_bar"></div>
+				<div class="preloader_bar"></div>
+			</div>
+		</div>
+
+		<!-- Contact -->
+
+		<div class="contact_form_section">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+
+						<!-- Contact Form -->
+						<div class="contact_form_container">
+							<div class="contact_title text-center">get in touch</div>
+							<form action="save_message.php" method="post" id="contact_form"
+								class="contact_form text-center">
+								<input type="text" name="name" id="contact_form_name"
+									class="contact_form_name input_field" placeholder="Name" required="required"
+									data-error="Name is required.">
+								<input type="email" name="email" id="contact_form_email"
+									class="contact_form_email input_field" placeholder="E-mail" required="required"
+									data-error="Email is required.">
+								<input type="text" name="subject" id="contact_form_subject"
+									class="contact_form_subject input_field" placeholder="Subject" required="required"
+									data-error="Subject is required.">
+								<textarea id="contact_form_message" class="text_field contact_form_message"
+									name="message" rows="4" placeholder="Message" required="required"
+									data-error="Please, write us a message."></textarea>
+								<button type="submit" id="form_submit_button"
+									class="form_submit_button button trans_200">send
+									message<span></span><span></span><span></span></button>
+							</form>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- About -->
+		<div class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+
+						<!-- About - Image -->
+
+						<div class="about_image">
+							<img src="images/contactus.png" alt="" class="image-1">
+						</div>
+
+					</div>
+
+					<div class="col-lg-4">
+
+						<!-- About - Content -->
+
+						<div class="about_content">
+							<div class="logo_container about_logo">
+								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelsl</a></div>
+							</div>
+							<p class="about_text">Discover the enchantment of Sri Lanka, a jewel in the Indian Ocean, where ancient history, vibrant culture, and stunning landscapes converge. Explore majestic sites like Sigiriya Rock Fortress, wander through lush tea plantations in the hill country, and witness the rich wildlife of Yala National Park. Indulge in the flavors of its exquisite cuisine and bask on serene golden beaches.</p>
+							<ul class="about_social_list">
+								<li class="about_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+								<li class="about_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li class="about_social_item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-lg-3">
+
+						<!-- About Info -->
+
+						<div class="about_info">
+							<ul class="contact_info_list">
+								<li class="contact_info_item d-flex flex-row">
+									<div>
+										<div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div>
+									</div>
+									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div>
+										<div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div>
+									</div>
+									<div class="contact_info_text">75-27-47-549</div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div>
+										<div class="contact_info_icon"><img src="images/message.svg" alt=""></div>
+									</div>
+									<div class="contact_info_text"><a href="mailto:mrmsihap7@gmail.com.info?Subject=Hello"
+											target="_top">mrmsihap7@gmail.com</a></div>
+								</li>
+								<li class="contact_info_item d-flex flex-row">
+									<div>
+										<div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div>
+									</div>
+									<div class="contact_info_text"><a href="">www.Travelsl.info</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<div class="boxx">
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+								<div class="footer_content footer_about">
+									<div class="logo_container footer_logo">
+										<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelsl</a>
+										</div>
+									</div>
+									<p class="footer_about_text">Discover the enchantment of Sri Lanka, a jewel in the Indian Ocean, where ancient history, vibrant culture, and stunning landscapes converge.</p>
+									<ul class="footer_social_list">
+										<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a>
+										</li>
+										<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li class="footer_social_item"><a href="#"><i class="fa fa-instagram"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+							</div>
+						</div>
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+							</div>
+						</div>
+
+						<!-- Footer Column -->
+						<div class="col-lg-3 footer_column">
+							<div class="footer_col">
+								<div class="footer_title">contact info</div>
+								<div class="footer_content footer_contact">
+									<ul class="contact_info_list">
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/placeholder.svg" alt="">
+												</div>
+											</div>
+											<div class="contact_info_text">4127 Raoul Wallenber 45b-c
+												colombo
+											</div>
+										</li>
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/phone-call.svg" alt="">
+												</div>
+											</div>
+											<div class="contact_info_text">+94 75-27-47-549</div>
+										</li>
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/message.svg" alt="">
+												</div>
+											</div>
+											<div class="contact_info_text"><a
+													href=""
+													target="_top">contact@travelsl.info</a></div>
+										</li>
+										<li class="contact_info_item d-flex flex-row">
+											<div>
+												<div class="contact_info_icon"><img src="images/planet-earth.svg"
+														alt=""></div>
+											</div>
+											<div class="contact_info_text"><a href="">www.Travelsl.info</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+			<!-- Copyright -->
+
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 order-lg-1 order-2  ">
+							<div class="copyright_content d-flex flex-row align-items-center">
+								<div>
+									Copyright &copy; All rights reserved by | Travelsl.info
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-9 order-lg-2 order-1">
+							<div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
+								<div class="footer_nav">
+									<ul class="footer_nav_list">
+										<li class="footer_nav_item"><a href="/">home</a></li>
+										<li class="footer_nav_item"><a href="about">about us</a></li>
+										<li class="footer_nav_item"><a href="contact">contact</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="styles/bootstrap4/popper.js"></script>
+	<script src="styles/bootstrap4/bootstrap.min.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+	<script src="js/contact_custom.js"></script>
+	<script>
+		// PRELOADER
+		window.addEventListener('load', function () {
+			setTimeout(function () {
+				document.getElementById('preloader').classList.add('hidden');
+			}, 600);
+		});
+
+		// HAMBURGER — open
+		document.getElementById('hamburger').addEventListener('click', function () {
+			document.getElementById('mobileMenu').classList.add('open');
+			document.body.style.overflow = 'hidden';
+		});
+
+		// CLOSE button
+		document.getElementById('menuClose').addEventListener('click', function () {
+			document.getElementById('mobileMenu').classList.remove('open');
+			document.body.style.overflow = '';
+		});
+
+		// ESC key close
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape') {
+				document.getElementById('mobileMenu').classList.remove('open');
+				document.body.style.overflow = '';
+			}
+		});
+	</script>
+
+</body>
+
+</html>
